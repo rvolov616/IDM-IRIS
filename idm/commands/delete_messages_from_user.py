@@ -5,7 +5,7 @@ from datetime import datetime
 
 @dp.event_handle(dp.Methods.DELETE_MESSAGES_FROM_USER)
 def delete_messages_from_user(event: Event) -> str:
-    message_id = utils.new_message(event.api, event.chat.peer_id, message="... удаляю сообщения ...")
+    message_id = utils.new_message(event.api, event.chat.peer_id, message="Кек. Удаляю сообщения... ")
 
     user_id = event.obj['user_id']
     amount = event.obj.get("amount", None)
