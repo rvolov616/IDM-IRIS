@@ -66,7 +66,7 @@ git clone https://github.com/rvolov616/IDM-IRIS
 cp IDM/database.json database.json
 rm -rf IDM-IRIS
 git clone https://github.com/rvolov616/IDM-IRIS
-cp database.json IDM/database.json
+cp database.json IDM-IRIS/database.json
 ```
 
 Перезапускаем приложение в вкладке *Web*
