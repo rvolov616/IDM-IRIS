@@ -13,10 +13,10 @@ def ping(event: MySignalEvent) -> str:
 
     r_type = 'ПОНГ' if event.command == "пинг" else "ПАУ" if event.command == "пиу" else "КОНГ"
 
-    if delta > 15:r_type += "\nТРЕВОГА. ШИНАПРОВОД СГРЫЗЕН!!!!"
-    elif delta > 10:r_type += "\nТак кто-то конкретно грызет шинапровод."
-    elif delta > 5:r_type += "\nТак кто-то начинает грызть шинапровод."
-    else:r_type += "\neee сытый, спасибо что накормили его."
+    if delta > 15:r_type += "\nТРЕВОГА. ПИНГ БОЛЬШОЙ!!!"
+    elif delta > 10:r_type += "\nХулинг"
+    elif delta > 5:r_type += "\nТак-пинг начинает подвисать."
+    else:r_type += "\nПинг хороший :)"
 
     message = f"""{r_type}
     Ответ через: {delta} с.
