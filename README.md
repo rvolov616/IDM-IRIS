@@ -64,7 +64,7 @@ git clone https://github.com/rvolov616/IDM-IRIS
 
 ```bash
 cp IDM/database.json database.json
-rm -rf IDM
+rm -rf IDM-IRIS
 git clone https://github.com/rvolov616/IDM-IRIS
 cp database.json IDM/database.json
 ```
